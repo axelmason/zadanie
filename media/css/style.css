@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+form .container > input {
+    background-color: none;
+}
+
+label {
+    color: white;
+}
+
+.logo {
+    padding: 3px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.logo:hover {
+    border-radius: 20px;
+    transform: scale(1.08);
+}
+
+.bg-img {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.nav_link {
+    white-space: nowrap;
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(white, white);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .4s ease;
+}
+.nav_link:hover {
+    background-size: 100% 1px;
+    color: white;
+}
+
+.row > .col {
+    align-self: center;
+}
+.row {
+    margin: 5px 0;
+}
+
+hr {
+    height: 2px;
+}
+
+#pass_range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 20px;
+    background: lightgrey;
+    width: 100%;
+    opacity: 0.7;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+#pass_range:hover {
+    opacity: 1;
+}
+#pass_range:focus:active {
+    opacity: 1;
+}
+#pass_range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: blue;
+    cursor: pointer;
+}
+
+#pass_range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: blue;
+    cursor: pointer;
+}
+
+.promotions_title {
+    padding-top: 20px;
+    color: white;
+    font-family: Roboto-Bold;
+    font-size: 48px;
+    text-align: center;
+}
+.promotions_block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.promotion_item {
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.promotion_img {
+    width: 100%;
+    height: 185px;
+    border: 2px solid white;
+}
+.promotion_name {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.promotion_desc {
+    color: white;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.email_subscribe_block_title {
+    color: white;
+    font-family: Roboto-Bold;
+    font-size: 48px;
+    text-align: center;
+}
+.footer_phone {
+    color: white;
+}
+.footer_nav_link {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    background-image: linear-gradient(white, white);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .4s ease;
+}
+.footer_nav_link:hover {
+    color: white;
+    background-size: 100% 2px;
+}
+
+
+@media screen and (max-width: 421px) {
+    .email_subscribe_block_title {
+        font-size: 30px;
+    }
+}

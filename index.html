@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media/css/style.css">
+    <link rel="stylesheet" href="media/bootstrap/css/bootstrap.css">
+    <script src="media/js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- фоновое изображение -->
+    <div class="bg-img">
+        <!-- header -->
+        <header class="container py-3">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-sm-12 text-center">
+                    <img src="media/img/logo.svg" width="150" class="logo">
+                </div>
+                <!-- <div class="col-md-1"></div> -->
+                <div class="col-lg-9 col-sm-12 text-center">
+                    <div class="nav_menu">
+                        <a href="#" class="nav_link">Акции</a>
+                        <a href="#" class="nav_link">Поиск</a>
+                        <a href="#" class="nav_link">Регистрация на рейс</a>
+                        <a href="#" class="nav_link">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <hr>
+        <!-- Секция поиска -->
+        <div class="search_block">
+            <form action="#" class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-xs-10 col-sm-9 mx-auto">
+                        <label for="from">Откуда</label>
+                        <input type="text" name="from" id="from" placeholder="Город или аэропорт отправления" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-xs-10 col-sm-9 mx-auto">
+                        <label for="to">Куда</label>
+                        <input type="text" name="to" id="to" placeholder="Город или аэропорт назначения" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-xs-10 col-sm-9 mx-auto">
+                            <label for="to_date">Дата вылета туда</label>
+                            <input type="date" name="to_date" id="to_date" class="form-control" required>
+
+                            <label for="back_date">Дата вылета обратно</label>
+                            <input type="date" name="back_date" id="back_date" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-xs-10 col-sm-9 mx-auto">
+                        <label for="pass_range">Кол-во пассажиров (от 1 до 8)</label>
+                        <!-- Ползунок -->
+                        <input type="range" name="pass_range" id="pass_range" min="1" max="8" value="1" oninput="fun1()"> 
+                        <!-- Вывод значения ползунка -->
+                        <p id="output_range" style="color: white;">1</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-10 col-sm-9 mx-auto">
+                        <input type="submit" value="Найти билеты" class="btn btn-primary w-100">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="promotions_blocks mt-5">
+            <h2 class="promotions_title">АКЦИИ</h2>
+            <div class="promotions_block mt-2 container d-flex justify-content-around">
+                <div class="promotion_item d-flex flex-column">
+                    <img src="media/img/promotions/promotion1.jpg" class="promotion_img">
+                    <div class="promotion_name">Returning and Changing Your Tickets</div>
+                    <div class="promotion_desc flex-fill">The pandemic has changed many travelers plans, but we know that it will not last forever. Once all of this is over, we will continue exploring this world the way we used to. Special rules that have been developed for this challenging situation will help you cancel your trip or postpone it until later.</div>
+                    <button class="promotion_button btn btn-outline-primary w-100 mt-2">Полная информация...</button>
+                </div>
+                <div class="promotion_item d-flex flex-column">
+                    <img src="media/img/promotions/promotion2.jpg" class="promotion_img">
+                    <div class="promotion_name">Best offers</div>
+                    <div class="promotion_desc flex-fill">To see again the streets that witnessed so much. To hug your beloved ones and look back to see what you’ve come through. And to think of new dreams that will be so special!</div>
+                    <button class="promotion_button btn btn-outline-primary w-100 mt-2">Полная информация...</button>
+                </div>
+                <div class="promotion_item d-flex flex-column">
+                    <img src="media/img/promotions/promotion3.jpg" class="promotion_img">
+                    <div class="promotion_name">See you more often</div>
+                    <div class="promotion_desc flex-fill">Since the beginning of January, we have been expanding the geography of flights in Russia so that you can see your loved ones more often. Choose our company to fly to where you are always expected.</div>
+                    <button class="promotion_button btn btn-outline-primary w-100 mt-2">Полная информация...</button>
+                </div>
+                <div class="promotion_item d-flex flex-column">
+                    <img src="media/img/promotions/promotion4.jpg" class="promotion_img">
+                    <div class="promotion_name">Everything is on again</div>
+                    <div class="promotion_desc flex-fill">From August 10, we will resume flights to Turkey. Flights from Moscow to Antalya will be operated twice a day daily, and flights on the Moscow-Dalaman route will be operated three to seven times a week.</div>
+                    <button class="promotion_button btn btn-outline-primary w-100 mt-2">Полная информация...</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="email_subscribe_block container py-2">
+            <h2 class="email_subscribe_block_title">ПОДПИСАТЬСЯ НА ЗАКРЫТЫЕ АКЦИИ</h2>
+            <form action="#">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-3 col-md-8 col-xs-12 col-sm-12">
+                            <input type="email" required placeholder="Email адрес" class="form-control">
+                        </div>
+                        <div class="col-lg-3 col-md-8 col-xs-12 col-sm-12">
+                            <input type="submit" value="Подписаться" class="btn btn-primary w-100">
+                        </div>
+                    </div>
+            </form>
+        </div>
+        <hr>
+        <footer class="footer d-flex flex-column py-3">
+            <div class="footer_phone mx-auto pb-2">Наш номер телефона: <span>8 (800) 100-10-10</span></div>
+            <div class="footer_nav_menu mx-auto">
+                <a href="index.html" class="footer_nav_link">Home</a>
+                <a href="login.html" class="footer_nav_link">Login</a>
+                <a href="sign_up.html" class="footer_nav_link">Sign Up</a>
+                <a href="contact.html" class="footer_nav_link">Contact</a>
+                <a href="news.html" class="footer_nav_link">News</a>
+                <a href="return.html" class="footer_nav_link">Return</a>
+                <a href="feedback.html" class="footer_nav_link">Feedback</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

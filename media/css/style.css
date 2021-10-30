@@ -132,22 +132,26 @@ hr {
     font-size: 48px;
     text-align: center;
 }
+.footer {
+    background-color: lightgrey;
+}
+
 .footer_phone {
-    color: white;
+    color: black;
 }
 .footer_nav_link {
     margin: 0 10px;
-    color: white;
+    color: black;
     font-size: 20px;
     text-decoration: none;
-    background-image: linear-gradient(white, white);
+    background-image: linear-gradient(black, black);
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
     transition: background-size .4s ease;
 }
 .footer_nav_link:hover {
-    color: white;
+    color: black;
     background-size: 100% 2px;
 }
 
